@@ -118,6 +118,126 @@ thefilename="${thefilenamenoprefix}.txt"
 # remove windows carriage return, remove the header line and add the filename as the last column on each line
 sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
 
+thefilenamenoprefix=DRUG18Q1
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG18Q2
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG18Q3
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG18Q4
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG19Q1
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG19Q2
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG19Q3
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG19Q4
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG20Q1
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG20Q2
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG20Q3
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG20Q4
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG21Q1
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG21Q2
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG21Q3
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG21Q4
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG22Q1
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG22Q2
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG22Q3
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG22Q4
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG23Q1
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG23Q2
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG23Q3
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
+thefilenamenoprefix=DRUG23Q4
+thefilename="${thefilenamenoprefix}.txt"
+# remove windows carriage return, remove the header line and add the filename as the last column on each line
+sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"${thefilenamenoprefix}_with_filename.txt"
+
 # concatenate all the version A drug files with filenames together into a single file for loading
 cat drug12q4_with_filename.txt DRUG13Q1_with_filename.txt DRUG13Q2_with_filename.txt DRUG13Q3_with_filename.txt DRUG13Q4_with_filename.txt DRUG14Q1_with_filename.txt DRUG14Q2_with_filename.txt > all_version_A_drug_data_with_filename.txt
 
