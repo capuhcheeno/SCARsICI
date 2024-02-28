@@ -5,10 +5,274 @@
 # LTS Computing LLC
 ################################################################
 
+# FAERS ASCII 2023 Q4
+fileyearquarter=23q4
+wget https://fis.fda.gov/content/Exports/faers_ascii_2023q4.zip
+unzip faers_ascii_2023q4.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2023 Q3
+fileyearquarter=23q3
+wget https://fis.fda.gov/content/Exports/faers_ascii_2023q3.zip
+unzip faers_ascii_2023q3.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2023 Q2
+fileyearquarter=23q2
+wget https://fis.fda.gov/content/Exports/faers_ascii_2023q2.zip
+unzip faers_ascii_2023q2.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2023 Q1
+fileyearquarter=23q1
+wget https://fis.fda.gov/content/Exports/faers_ascii_2023q1.zip
+unzip faers_ascii_2023q1.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2022 Q4
+fileyearquarter=22q4
+wget https://fis.fda.gov/content/Exports/faers_ascii_2022q4.zip
+unzip faers_ascii_2022q4.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2022 Q3
+fileyearquarter=22q3
+wget https://fis.fda.gov/content/Exports/faers_ascii_2022q3.zip
+unzip faers_ascii_2022q3.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2022 Q2
+fileyearquarter=22q2
+wget https://fis.fda.gov/content/Exports/faers_ascii_2022q2.zip
+unzip faers_ascii_2022q2.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2022 Q1
+fileyearquarter=22q1
+wget https://fis.fda.gov/content/Exports/faers_ascii_2022q1.zip
+unzip faers_ascii_2022q1.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2021 Q4
+fileyearquarter=21q4
+wget https://fis.fda.gov/content/Exports/faers_ascii_2021q4.zip
+unzip faers_ascii_2021q4.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2021 Q3
+fileyearquarter=21q3
+wget https://fis.fda.gov/content/Exports/faers_ascii_2021q3.zip
+unzip faers_ascii_2021q3.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2021 Q2
+fileyearquarter=21q2
+wget https://fis.fda.gov/content/Exports/faers_ascii_2021q2.zip
+unzip faers_ascii_2021q2.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2021 Q1
+fileyearquarter=21q1
+wget https://fis.fda.gov/content/Exports/faers_ascii_2021q1.zip
+unzip faers_ascii_2021q1.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2020 Q4
+fileyearquarter=20q4
+wget https://fis.fda.gov/content/Exports/faers_ascii_2020q4.zip
+unzip faers_ascii_2020q4.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2020 Q3
+fileyearquarter=20q3
+wget https://fis.fda.gov/content/Exports/faers_ascii_2020q3.zip
+unzip faers_ascii_2020q3.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2020 Q2
+fileyearquarter=20q2
+wget https://fis.fda.gov/content/Exports/faers_ascii_2020q2.zip
+unzip faers_ascii_2020q2.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2020 Q1
+fileyearquarter=20q1
+wget https://fis.fda.gov/content/Exports/faers_ascii_2020q1.zip
+unzip faers_ascii_2020q1.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2019 Q4
+fileyearquarter=19q4
+wget https://fis.fda.gov/content/Exports/faers_ascii_2019q4.zip
+unzip faers_ascii_2019q4.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2019 Q3
+fileyearquarter=19q3
+wget https://fis.fda.gov/content/Exports/faers_ascii_2019q3.zip
+unzip faers_ascii_2019q3.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2019 Q2
+fileyearquarter=19q2
+wget https://fis.fda.gov/content/Exports/faers_ascii_2019q2.zip
+unzip faers_ascii_2019q2.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2019 Q1
+fileyearquarter=19q1
+wget https://fis.fda.gov/content/Exports/faers_ascii_2019q1.zip
+unzip faers_ascii_2019q1.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2018 Q4
+fileyearquarter=18q4
+wget https://fis.fda.gov/content/Exports/faers_ascii_2018q4.zip
+unzip faers_ascii_2018q4.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2018 Q3
+fileyearquarter=18q3
+wget https://fis.fda.gov/content/Exports/faers_ascii_2018q3.zip
+unzip faers_ascii_2018q3.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2018 Q2
+fileyearquarter=18q2
+wget https://fis.fda.gov/content/Exports/faers_ascii_2018q2.zip
+unzip faers_ascii_2018q2.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
+# FAERS ASCII 2018 Q1
+fileyearquarter=18q1
+wget https://fis.fda.gov/content/Exports/faers_ascii_2018q1.zip
+unzip faers_ascii_2018q1.zip
+mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
+mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
+mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
+mv Readme.doc "ascii/Readme${fileyearquarter}.doc"
+mv ascii/ASC_NTS.pdf "ascii/ASC_NTS${fileyearquarter}.pdf"
+mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
+
 # FAERS ASCII 2017 Q4
 fileyearquarter=17q4
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/UCM605569.zip
-unzip UCM605569.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2017q4.zip
+unzip faers_ascii_2017q4.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -18,8 +282,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2017 Q3
 fileyearquarter=17q3
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/UCM590948.zip
-unzip UCM590948.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2017q3.zip
+unzip faers_ascii_2017q3.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -29,8 +293,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2017 Q2
 fileyearquarter=17q2
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/UCM578242.zip
-unzip UCM578242.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2017q2.zip
+unzip faers_ascii_2017q2.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -40,8 +304,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2017 Q1
 fileyearquarter=17q1
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/UCM562290.zip
-unzip UCM562290.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2017q1.zip
+unzip faers_ascii_2017q1.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -51,8 +315,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2016 Q4
 fileyearquarter=16q4
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/UCM546946.zip
-unzip UCM546946.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2016q4.zip
+unzip faers_ascii_2016q4.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -62,8 +326,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2016 Q3
 fileyearquarter=16q3
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/UCM534900.zip
-unzip UCM534900.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2016q3.zip
+unzip faers_ascii_2016q3.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -73,8 +337,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2016 Q2
 fileyearquarter=16q2
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/UCM521951.zip
-unzip UCM521951.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2016q2.zip
+unzip faers_ascii_2016q2.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -84,8 +348,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2016 Q1
 fileyearquarter=16q1
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/UCM509489.zip
-unzip UCM509489.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2016q1.zip
+unzip faers_ascii_2016q1.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
