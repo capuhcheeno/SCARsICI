@@ -359,8 +359,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2015 Q4
 fileyearquarter=15q4
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/UCM492340.zip
-unzip UCM492340.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2015q4.zip
+unzip faers_ascii_2015q4.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -370,8 +370,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2015 Q3
 fileyearquarter=15q3
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/UCM477190.zip
-unzip UCM477190.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2015q3.zip
+unzip faers_ascii_2015q3.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -381,8 +381,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2015 Q2
 fileyearquarter=15q2
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/UCM463272.zip
-unzip UCM463272.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2015q2.zip
+unzip faers_ascii_2015q2.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -392,8 +392,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2015 Q1
 fileyearquarter=15q1
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/UCM458083.zip
-unzip UCM458083.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2015q1.zip
+unzip faers_ascii_2015q1.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -404,8 +404,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2014 Q4
 fileyearquarter=14q4
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/UCM451489.zip
-unzip UCM451489.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2014q4.zip
+unzip faers_ascii_2014q4.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -415,8 +415,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2014 Q3
 fileyearquarter=14q3
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/UCM443579.zip
-unzip UCM443579.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2014q3.zip
+unzip faers_ascii_2014q3.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -426,8 +426,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2014 Q2
 fileyearquarter=14q2
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/UCM429323.zip
-unzip UCM429323.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2014q2.zip
+unzip faers_ascii_2014q2.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -437,8 +437,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2014 Q1
 fileyearquarter=14q1
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/UCM419914.zip
-unzip UCM419914.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2014q1.zip
+unzip faers_ascii_2014q1.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -448,8 +448,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2013 Q4
 fileyearquarter=13q4
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/UCM409890.zip
-unzip UCM409890.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2013q4.zip
+unzip faers_ascii_2013q4.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -459,8 +459,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2013 Q3
 fileyearquarter=13q3
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/UCM399592.zip
-unzip UCM399592.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2013q3.zip
+unzip faers_ascii_2013q3.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -470,8 +470,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2013 Q2
 fileyearquarter=13q2
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/UCM395994.zip
-unzip UCM395994.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2013q2.zip
+unzip faers_ascii_2013q2.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -481,8 +481,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2013 Q1
 fileyearquarter=13q1
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/UCM387233.zip
-unzip UCM387233.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2013q1.zip
+unzip faers_ascii_2013q1.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
@@ -492,8 +492,8 @@ mv ascii/ASC_NTS.doc "ascii/ASC_NTS${fileyearquarter}.doc"
 
 # FAERS ASCII 2012 Q4
 fileyearquarter=12q4
-wget https://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/UCM364757.zip
-unzip UCM364757.zip
+wget https://fis.fda.gov/content/Exports/faers_ascii_2012q4.zip
+unzip faers_ascii_2012q4.zip
 mv FAQs.pdf "ascii/FAQs${fileyearquarter}.pdf"
 mv FAQs.doc "ascii/FAQs${fileyearquarter}.doc"
 mv Readme.pdf "ascii/Readme${fileyearquarter}.pdf"
