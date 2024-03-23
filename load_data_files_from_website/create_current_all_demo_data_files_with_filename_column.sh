@@ -14,7 +14,7 @@
 thefilenamenoprefix=ascii/demo12q4
 thefilename="${thefilenamenoprefix}.txt"
 # remove windows carriage return, add on the filename column name to the header line and add the filename as the last column on each line
-sed 's/\r$//' "${thefilename}"| sed '1,1 s/$/\$filename/' | sed "2,\$ s|\$|\$${thefilename}|" >"${thefilenamenoprefix}_with_filename.txt"
+sed 's/\r$//' "${thefilename}" | sed '1,1 s|$|filename|' | sed "2,\$ s|\$|${thefilename}|" >"${thefilenamenoprefix}_with_filename.txt"
 
 thefilenamenoprefix=ascii/DEMO13Q1
 thefilename="${thefilenamenoprefix}.txt"
@@ -51,7 +51,8 @@ sed 's/\r$//' "${thefilename}"| sed '1,1d' | sed "1,$ s/$/\$${thefilename}/" >"$
 thefilenamenoprefix=ascii/DEMO14Q3
 thefilename="${thefilenamenoprefix}.txt"
 # remove windows carriage return, add on the filename column name to the header line and add the filename as the last column on each line
-sed 's/\r$//' "${thefilename}"| sed '1,1 s/$/\$filename/' | sed "2,\$ s|\$|\$${thefilename}|" >"${thefilenamenoprefix}_with_filename.txt"
+sed 's/\r$//' "${thefilename}" | sed '1,1 s|$|filename|' | sed "2,\$ s|\$|${thefilename}|" >"${thefilenamenoprefix}_with_filename.txt"
+
 thefilenamenoprefix=ascii/DEMO14Q4
 thefilename="${thefilenamenoprefix}.txt"
 # remove windows carriage return, remove the header line and add the filename as the last column on each line
