@@ -6,7 +6,7 @@
 ##########################################################################
 
 # Base directory for files, adjust as necessary
-base_dir="."
+base_dir="ascii"
 
 # Define an array of file prefixes to process
 file_prefixes=(
