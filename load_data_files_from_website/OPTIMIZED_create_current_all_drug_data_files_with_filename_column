@@ -8,7 +8,7 @@
 ##########################################################################
 
 # Base directory for files
-base_dir="."
+base_dir="ascii"
 
 # Initialize arrays for Version A and B file prefixes
 version_a_prefixes=( "drug12q4" "DRUG13Q1" "DRUG13Q2" "DRUG13Q3" "DRUG13Q4" "DRUG14Q1" "DRUG14Q2" )
