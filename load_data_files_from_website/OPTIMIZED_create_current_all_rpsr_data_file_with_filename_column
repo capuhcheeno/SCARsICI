@@ -1,0 +1,41 @@
+#!/bin/sh
+##########################################################################
+# Create the combined RPSR files with the filename appended as the last column
+#
+# LTS Computing LLC
+##########################################################################
+
+# Define the base directory for files, adjust as needed
+base_dir="ascii"
+
+# Define file prefixes in an array for easier management
+file_prefixes=(
+    "rpsr12q4"
+    "RPSR13Q1" "RPSR13Q2" "RPSR13Q3" "RPSR13Q4"
+    "RPSR14Q1" "RPSR14Q2" "RPSR14Q3" "RPSR14Q4"
+    "RPSR15Q1" "RPSR15Q2" "RPSR15Q3" "RPSR15Q4"
+    "RPSR16Q1" "RPSR16Q2" "RPSR16Q3" "RPSR16Q4"
+    "RPSR17Q1" "RPSR17Q2" "RPSR17Q3" "RPSR17Q4"
+    "RPSR18Q1" "RPSR18Q2" "RPSR18Q3" "RPSR18Q4"
+    "RPSR19Q1" "RPSR19Q2" "RPSR19Q3" "RPSR19Q4"
+    "RPSR20Q1" "RPSR20Q2" "RPSR20Q3" "RPSR20Q4"
+    "RPSR21Q1" "RPSR21Q2" "RPSR21Q3" "RPSR21Q4"
+    "RPSR22Q1" "RPSR22Q2" "RPSR22Q3" "RPSR22Q4"
+    "RPSR23Q1" "RPSR23Q2" "RPSR23Q3" "RPSR23Q4"
+)
+
+# Process each file
+for prefix in "${file_prefixes[@]}"; do
+    thefilename="${base_dir}/${prefix}.txt"
+    # Check if it's the first file for adding header
+    if [[ "$prefix" == "rpsr12q4" ]]; then
+        # Add filename header
+        sed 's/\r$//' "$thefilename" | sed '1 s/$/ filename/' | sed "2,\$ s|$| ${thefilename}|" > "${base_dir}/${prefix}_with_filename.txt"
+    else
+        # Append filename without header modification
+        sed 's/\r$//' "$thefilename" | sed '1d' | sed "1,\$ s|$| ${thefilename}|" > "${base_dir}/${prefix}_with_filename.txt"
+    fi
+done
+
+# Concatenate all files into one
+cat "${base_dir}"/*_with_filename.txt > "${base_dir}/all_rpsr_data_with_filename.txt"
