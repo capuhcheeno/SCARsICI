@@ -1,0 +1,46 @@
+#!/bin/sh
+##########################################################################
+# Create the combined legacy demographic files with the filename appended as the last column.
+# NOTE: The demographic file formats are in two versions:
+# Version A: Before 2005 Q3
+# Version B: From 2005 Q3 onwards
+#
+# LTS Computing LLC
+##########################################################################
+
+# Directory containing the files.
+DIR="ascii"
+
+# Process Format A files.
+echo "Processing Format A files..."
+first_file="DEMO04Q1.TXT"
+# Create the all data file for Format A and add "FILENAME" column to the header.
+sed 's/\r$//' "$DIR/$first_file" | sed 'N;s/\n\$/\$/' | sed "1 s/$/\$FILENAME/" | sed "2,\$ s/\$/$first_file/" > all_version_A_demo_legacy_data_with_filename.txt
+
+# Remaining Format A files, excluding the non-existent DEMO04Q4.TXT.
+FILES="DEMO04Q2.TXT DEMO04Q3.TXT DEMO05Q1.TXT DEMO05Q2.TXT"
+for file in $FILES; do
+    sed 's/\r$//' "$DIR/$file" | sed 'N;s/\n\$/\$/' | sed '1d' | sed "s/\$/$file/" >> all_version_A_demo_legacy_data_with_filename.txt
+done
+
+# Process Format B files starting from DEMO05Q4.TXT since DEMO05Q3.TXT does not exist.
+echo "Processing Format B files..."
+first_file_B="DEMO05Q4.TXT"
+# Create the all data file for Format B and add "FILENAME" column to the header.
+sed 's/\r$//' "$DIR/$first_file_B" | sed 'N;s/\n\$/\$/' | sed "1 s/$/\$FILENAME/" | sed "2,\$ s/\$/$first_file_B/" > all_version_B_demo_legacy_data_with_filename.txt
+
+# Remaining Format B files.
+FILES_B="
+DEMO06Q1.TXT DEMO06Q2.TXT DEMO06Q3.TXT DEMO06Q4.TXT
+DEMO07Q1.TXT DEMO07Q2.TXT DEMO07Q3.TXT DEMO07Q4.TXT
+DEMO08Q1.TXT DEMO08Q2.TXT DEMO08Q3.TXT DEMO08Q4.TXT
+DEMO09Q1.TXT DEMO09Q2.TXT DEMO09Q3.TXT DEMO09Q4.TXT
+DEMO10Q1.TXT DEMO10Q2.TXT DEMO10Q3.TXT DEMO10Q4.TXT
+DEMO11Q1.TXT DEMO11Q2.TXT DEMO11Q3.TXT DEMO11Q4.TXT
+DEMO12Q1.TXT DEMO12Q2.TXT DEMO12Q3.TXT
+"
+for file in $FILES_B; do
+    sed 's/\r$//' "$DIR/$file" | sed 'N;s/\n\$/\$/' | sed '1d' | sed "s/\$/$file/" >> all_version_B_demo_legacy_data_with_filename.txt
+done
+
+echo "Processing complete."
