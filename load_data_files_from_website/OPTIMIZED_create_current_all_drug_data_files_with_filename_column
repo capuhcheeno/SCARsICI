@@ -25,9 +25,9 @@ temp_file_b="${base_dir}/temp_b.txt"
 
 process_file() {
     thefilename="${base_dir}/${1}.txt"
-    version_indicator=$(echo "${1}" | grep -oE '^[A-Z]+')
+    version_indicator="${1}"
     # Determine version based on filename and use the first character as the version indicator
-    if [[ "$version_indicator" < "DRUG14Q3" ]]; then
+    if [[ " ${version_a_prefixes[*]} " =~ " $version_indicator " ]]; then
         # Version A
         sed 's/\r$//' "${thefilename}" | sed '1 s/$/ filename/' | sed "2,\$ s|\$| ${thefilename}|" >> "$temp_file_a"
     else
