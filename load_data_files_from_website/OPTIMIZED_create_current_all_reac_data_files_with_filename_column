@@ -10,6 +10,14 @@
 # Define the base directory for files
 base_dir="ascii"
 
+# Define output files for version A and B
+output_file_a="${base_dir}/all_version_A_reac_data_with_filename.txt"
+output_file_b="${base_dir}/all_version_B_reac_data_with_filename.txt"
+
+# Make sure output files start empty
+> "$output_file_a"
+> "$output_file_b"
+
 # Function to process files, appending filename as the last column
 process_file() {
     local file_prefix="$1"
@@ -18,11 +26,11 @@ process_file() {
     local output_file="${base_dir}/${file_prefix}_with_filename.txt"
 
     if [[ "$version" == "A" ]]; then
-        # Version A: Add filename column name to the header
-        sed 's/\r$//' "$file_path" | sed '1 s/$/ filename/' | sed "2,\$ s|\$| ${file_path}|" > "$output_file"
+        # Version A: Add filename column name to the header and append to version A output file
+        sed 's/\r$//' "$file_path" | sed '1 s/$/ filename/' | sed "2,\$ s|\$| ${file_path}|" >> "$output_file_a"
     else
-        # Version B: Do not modify the header, just append the filename
-        sed 's/\r$//' "$file_path" | sed '1d' | sed "1,\$ s|\$| ${file_path}|" > "$output_file"
+        # Version B: Do not modify the header, just append the filename and append to version B output file
+        sed 's/\r$//' "$file_path" | sed '1d' | sed "1,\$ s|\$| ${file_path}|" >> "$output_file_b"
     fi
 }
 
@@ -41,9 +49,3 @@ done
 for prefix in "${version_b_prefixes[@]}"; do
     process_file "$prefix" "B"
 done
-
-# Concatenate all Version A files into one
-cat "${base_dir}"/*_with_filename.txt | grep -E 'reac12q4|REAC13Q[1-4]|REAC14Q[1-2]' > "${base_dir}/all_version_A_reac_data_with_filename.txt"
-
-# Concatenate all Version B files into one
-cat "${base_dir}"/*_with_filename.txt | grep -vE 'reac12q4|REAC13Q[1-4]|REAC14Q[1-2]' > "${base_dir}/all_version_B_reac_data_with_filename.txt"
