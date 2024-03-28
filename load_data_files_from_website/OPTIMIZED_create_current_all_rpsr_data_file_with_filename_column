@@ -1,12 +1,21 @@
 #!/bin/sh
 ##########################################################################
 # Create the combined RPSR files with the filename appended as the last column
+# and output into version A and version B files separately.
 #
 # LTS Computing LLC
 ##########################################################################
 
 # Define the base directory for files, adjust as needed
 base_dir="ascii"
+
+# Output files for versions A and B
+output_file_a="${base_dir}/all_version_A_rpsr_data_with_filename.txt"
+output_file_b="${base_dir}/all_version_B_rpsr_data_with_filename.txt"
+
+# Make sure output files start empty
+> "$output_file_a"
+> "$output_file_b"
 
 # Define file prefixes in an array for easier management
 file_prefixes=(
@@ -27,15 +36,19 @@ file_prefixes=(
 # Process each file
 for prefix in "${file_prefixes[@]}"; do
     thefilename="${base_dir}/${prefix}.txt"
-    # Check if it's the first file for adding header
-    if [[ "$prefix" == "rpsr12q4" ]]; then
-        # Add filename header
-        sed 's/\r$//' "$thefilename" | sed '1 s/$/ filename/' | sed "2,\$ s|$| ${thefilename}|" > "${base_dir}/${prefix}_with_filename.txt"
+    # Determine the output file based on the prefix
+    if [[ "$prefix" < "RPSR14Q3" ]]; then
+        # Version A processing
+        if [[ "$prefix" == "rpsr12q4" ]]; then
+            # Add filename header for the first file of version A
+            sed 's/\r$//' "$thefilename" | sed '1 s/$/ filename/' | sed "2,\$ s|$| ${thefilename}|" >> "$output_file_a"
+        else
+            # Append filename without header modification for subsequent version A files
+            sed 's/\r$//' "$thefilename" | sed '1d' | sed "1,\$ s|$| ${thefilename}|" >> "$output_file_a"
+        fi
     else
-        # Append filename without header modification
-        sed 's/\r$//' "$thefilename" | sed '1d' | sed "1,\$ s|$| ${thefilename}|" > "${base_dir}/${prefix}_with_filename.txt"
+        # Version B processing
+        # Append filename without header modification for all version B files
+        sed 's/\r$//' "$thefilename" | sed '1d' | sed "1,\$ s|$| ${thefilename}|" >> "$output_file_b"
     fi
 done
-
-# Concatenate all files into one
-cat "${base_dir}"/*_with_filename.txt > "${base_dir}/all_rpsr_data_with_filename.txt"
