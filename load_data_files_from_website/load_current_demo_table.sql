@@ -1,104 +1,110 @@
 --######################################################
---# Create legacy demo staging tables DDL and
---# Load legacy FAERS data files into the demo_legacy table
+--# Create demo staging tables DDL and
+--# Load current FAERS data files into the demo table
 --#
 --# LTS Computing LLC
 --######################################################
 
 set search_path = faers;
 
-drop table if exists demo_legacy_staging_version_a;
-create table demo_legacy_staging_version_a
+drop table if exists demo_staging_version_A;
+create table demo_staging_version_A
 (
-ISR varchar,
-"CASE" varchar,
-I_F_COD varchar,
-FOLL_SEQ varchar,
-IMAGE varchar,
-EVENT_DT varchar,
-MFR_DT varchar,
-FDA_DT varchar,
-REPT_COD varchar,
-MFR_NUM varchar,
-MFR_SNDR varchar,
-AGE varchar,
-AGE_COD varchar,
-GNDR_COD varchar,
-E_SUB varchar,
-WT varchar,
-WT_COD varchar,
-REPT_DT varchar,
-OCCP_COD varchar,
-DEATH_DT varchar,
-TO_MFR varchar,
-CONFID varchar,
-FILENAME varchar
+primaryid varchar,
+caseid varchar,
+caseversion varchar,
+i_f_code varchar,
+event_dt varchar,
+mfr_dt varchar,
+init_fda_dt varchar,
+fda_dt varchar,
+rept_cod varchar,
+mfr_num varchar,
+mfr_sndr varchar,
+age varchar,
+age_cod varchar,
+gndr_cod varchar,
+e_sub varchar,
+wt varchar,
+wt_cod varchar,
+rept_dt varchar,
+to_mfr varchar,
+occp_cod varchar,
+reporter_country varchar,
+occr_country varchar,
+filename varchar
 );
-truncate demo_legacy_staging_version_a;
+truncate demo_staging_version_A;
 
-COPY demo_legacy_staging_version_a FROM 'C:\Users\Public\all_version_A_demo_legacy_data_with_filename.txt' WITH DELIMITER E'	' CSV HEADER QUOTE E'\b' ;
-select distinct filename from demo_legacy_staging_version_a order by 1 limit 10;
+COPY demo_staging_version_A FROM '/home/ubuntu/inbound_data/faers/ascii/all_version_A_demo_data_with_filename.txt' WITH DELIMITER E'$' CSV HEADER QUOTE E'\b' ;
+select distinct filename from demo_staging_version_A order by 1;
 
-drop table if exists demo_legacy_staging_version_b;
-create table demo_legacy_staging_version_b
+drop table if exists demo_staging_version_B;
+create table demo_staging_version_B
 (
-ISR varchar,
-"CASE" varchar,
-I_F_COD varchar,
-FOLL_SEQ varchar,
-IMAGE varchar,
-EVENT_DT varchar,
-MFR_DT varchar,
-FDA_DT varchar,
-REPT_COD varchar,
-MFR_NUM varchar,
-MFR_SNDR varchar,
-AGE varchar,
-AGE_COD varchar,
-GNDR_COD varchar,
-E_SUB varchar,
-WT varchar,
-WT_COD varchar,
-REPT_DT varchar,
-OCCP_COD varchar,
-DEATH_DT varchar,
-TO_MFR varchar,
-CONFID varchar,
-REPORTER_COUNTRY varchar,
-FILENAME varchar
+primaryid varchar,
+caseid varchar,
+caseversion varchar,
+i_f_code varchar,
+event_dt varchar,
+mfr_dt varchar,
+init_fda_dt varchar,
+fda_dt varchar,
+rept_cod varchar,
+auth_num varchar,
+mfr_num varchar,
+mfr_sndr varchar,
+lit_ref varchar,
+age varchar,
+age_cod varchar,
+age_grp varchar,
+sex varchar,
+e_sub varchar,
+wt varchar,
+wt_cod varchar,
+rept_dt varchar,
+to_mfr varchar,
+occp_cod varchar,
+reporter_country varchar,
+occr_country varchar,
+filename varchar
 );
-truncate demo_legacy_staging_version_b;
+truncate demo_staging_version_B;
 
-COPY demo_legacy_staging_version_b FROM 'C:\Users\Public\all_version_B_demo_legacy_data_with_filename.txt' WITH DELIMITER E'$' CSV HEADER QUOTE E'\b' ;
-select distinct filename from demo_legacy_staging_version_b order by 1 ;
+COPY demo_staging_version_B FROM '/home/ubuntu/inbound_data/faers/ascii/all_version_B_demo_data_with_filename.txt' WITH DELIMITER E'$' CSV HEADER QUOTE E'\b' ;
+select distinct filename from demo_staging_version_B order by 1;
 
-drop table if exists demo_legacy ;
-create table demo_legacy as
+drop table if exists demo;
+create table demo as
 select
-ISR,
-"CASE",
-I_F_COD,
-FOLL_SEQ,
-IMAGE,
-EVENT_DT,
-MFR_DT,
-FDA_DT,
-REPT_COD,
-MFR_NUM,
-MFR_SNDR,
-AGE,
-AGE_COD,
-GNDR_COD,
-E_SUB,
-WT,
-WT_COD,
-REPT_DT,
-OCCP_COD,
-DEATH_DT,
-TO_MFR,
-CONFID,
-null as REPORTER_COUNTRY,
-FILENAME
-from demo_legacy_staging_version_a
+primaryid,
+caseid,
+caseversion,
+i_f_code,
+event_dt,
+mfr_dt,
+init_fda_dt,
+fda_dt,
+rept_cod,
+null as auth_num,
+mfr_num,
+mfr_sndr,
+null as lit_ref,
+age,
+age_cod,
+null as age_grp,
+gndr_cod as sex,
+e_sub,
+wt,
+wt_cod,
+rept_dt,
+to_mfr,
+occp_cod,
+reporter_country,
+occr_country,
+filename
+from demo_staging_version_A
 union all
-select * from demo_legacy_staging_version_b;
+select * from demo_staging_version_B;
+
+select distinct filename from demo order by 1;
